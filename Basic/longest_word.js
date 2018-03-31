@@ -7,7 +7,6 @@ function longestWord(str){
         b.push(a[i].length);
     }
     return Math.max(...b);
-    
 }
 
 console.log(longestWord('this is the logest string ontherword'));
