@@ -1,0 +1,1 @@
+function translator(str){	var vow = /[aeiou]/gi; //global and case intensive search	var pig = "";	for (var i in str){		if(str[0].match(vow)){			pig = str + "way";		}else {			pig = str.substr(str.indexOf(str.match(vow)[0])) + str.substr(0, str.indexOf(str.match(vow)[0])) + "ay";		}	}	return pig;}console.log(translator("consonant"));
