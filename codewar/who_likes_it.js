@@ -10,10 +10,13 @@ const likes = names => {
   }
   else if( names.length >= 2){
     if(names.length <= 3){
+    //adding 'and' into array before the last index
     names.splice(names.length -1, 0 ,"and");
+    //join 3 last index of the array including 'and' which was added
     names.splice(names.length -3 , 3, names.slice(names.length -3, names.length).join(' '));
+
     for(var i in names){
-      //names[0] = names[0] + ' ';
+      
       if(i >= 1){
       names[i] = ' ' + names[i];
     }
