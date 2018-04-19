@@ -1,16 +1,18 @@
+
 function divisors(integer){
 	var a =[];
-
-	for (var i = 2; i < integer; i++){
-		if(integer % i ==0){
+	for(var i = 2; i < integer; i++){
+		if(integer % i == 0){
 			a.push(i);
 		}
-		if(a.length ==0){
-		return integer + " is prime";
 	}
-	}
-	return a;
-	
+	return a.length ? a : integer + " is prime"; 
+
 }
 
-console.log(divisors(13));
+var test = Math.floor(Math.random()*10);
+
+console.log(divisors(test)); 
+
+
+console.log(divisors(12));
